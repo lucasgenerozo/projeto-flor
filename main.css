@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* NUNITO */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+/* SACRAMENTO (parece cursiva */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+main {
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    /* background-image: url(imagens/fundo_catalogo.png);
+    background-position: center;
+    background-position-y: top; */
+    background-color: #fefdef;
+}
+
+div#cards-catalogo {
+    background-image: url(imagens/fundo_card_.png);
+    background-position: center bottom;
+}
+
+div#catalogo {
+    width: 100%;
+    /* outline: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+div#catalogo h3 {
+    width: 65%;
+    height: 100px;
+    font-size: 4em;
+    padding: 10px;
+    text-indent: 190px; /*gambiarra: faz o texto começar 200px pro lado */
+    background-color: #FAE5DB;
+    border-radius: 5px;
+    box-shadow: -10px 10px .5px #E3C3BC;
+    font-family: 'Sacramento', cursive;
+    overflow: hidden;
+}
+
+section#cards {
+    /* outline: 1px solid black;  */
+    margin: 100px 50px 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+section#cards div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    width: 300px;
+    min-height: 350px;
+    height: 400px;
+    margin: 0px 30px 40px;
+    background-color: #FAE5DB;
+    box-shadow: -10px 10px .5px #E3C3BC;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.card:hover {
+    background-color: #f3dfd7;
+}
+
+.card img {
+    width: 200px;
+}
+
+.card figcaption {
+    font-size: 2em;
+}
+
+.btnVerde {
+    margin-top: 65px;
+    background-color: #A3A646;
+    font-size: 2.5em;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    box-shadow: -5px 5px 3px rgba(1,1,1,0.3);
+}
+.btnVerde:hover {
+    background-color: #9fa24e;
+}
+
+section#sobre-nos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+    background-image: url(imagens/fundo_sobrenos.png);
+    background-size: 90%;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    
+}
+
+section#sobre-nos div {
+    width: 550px;
+    height: 550px;
+    background-color: #FAE5DB;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -10px 10px .5px #E3C3BC;
+    font-size: 1.8em;
+}
+
+section#sobre-nos h3 {
+    text-align: center;
+    font-family: 'Sacramento';
+    font-size: 2.5em;
+}
+
+section#sobre-nos p {
+    margin-top: -10px;
+    padding: 20px;
+}
+
+section#sobre-nos img {
+    width: 700px;
+    border: 3px solid #A3A646;
+    border-radius: 10px;
+}

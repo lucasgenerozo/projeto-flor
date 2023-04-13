@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+section#contato {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(256deg, #E3C3BC 1.06%, #FAE5DB 78.95%, #FEFDEF 97.96%);
+    overflow: hidden;
+}
+
+section#contato h3 {
+    text-align: center;
+    font-family: 'Sacramento';
+    font-size: 4em;
+    position: absolute;
+    left: 35%;
+    margin-top: 30px;
+}
+
+section#contato img {
+    width: 25%;
+    margin-left: 75px;
+}
+
+section#contato form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    width: 50%;
+    right: 0px;
+    font-size: 1.5em;
+    /* outline: 1px solid black; */
+}
+
+section#contato form input[type="text"], section#contato form input[type="email"] {
+    width: 75%;
+    border: 1px solid #A3A646;
+    padding: 10px;
+    margin-bottom: 25px;
+    font-size: 0.75em;
+}
+
+section#contato form input[type="submit"] {
+    width: 50%;
+    height: 60px;
+    padding: 5px;
+    border: none;
+    box-shadow: -5px 5px 3px rgba(1,1,1,0.3);
+    font-size: 1.5em;
+    margin-top: 35px;
+    margin-bottom: 0;
+    margin-left: 15%;
+}
+
+/* RODAPE */
+
+footer#rodape {
+    padding: 30px 70px 20px;
+    background-color: #E3C3BC;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer#rodape div {
+    display: flex;
+}
+
+footer#rodape #footer_logo {
+    width: 40%;
+    height: 40%;
+}
+
+footer#rodape h4 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4em;
+    margin: 0px 25px -20px;
+}
+
+footer#rodape div#icons img {
+    width: 75px;
+    margin: 0px 10px;
+}
+
+footer#rodape div#icons img#rs_zap {
+    width: 65px;
+}

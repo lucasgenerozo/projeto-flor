@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura da Flor</title>
+    <link rel="shortcut icon" href="imagens/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="comeco.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    
+    <nav>
+        <div id="n1">
+            <a tabindex="1" href="#principal"><img src="imagens/logo.webp" alt="Logo Flor"></a>
+            <a tabindex="1" id="aumenta" class="btn btnTamanho" onclick="muda('+')" onkeydown="muda('+')">A+</a>
+            <a tabindex="1" id="diminui" class="btn btnTamanho" onclick="muda('-')" onkeydown="muda('-')">A-</a>
+        </div>
+    
+        <div id="n2">
+            <a tabindex="1" href="#catalogo" class="btn btnLink">Catálogo</a>
+            <a tabindex="1" href="#sobre-nos" class="btn btnLink">Sobre Nós</a>
+            <a tabindex="1" href="#contato" class="btn btnLink">Contato</a>
+        </div>
+    </nav>
+
+    <header>
+        <div> <!-- div pra separa-->
+            <h1>Flor</h1>
+            <h2>Floricultura</h2>
+            <a href="#" id="btnSaibaMais" class="btn" tabindex="1">Saiba Mais</a>
+        </div>
+        <img src="imagens/flor.png" alt="Flor rosa atravessando metade da tela">
+    </header>
+
+    <main id="principal">
+        <div id="cards-catalogo">
+            <div id="catalogo">
+                <h3>Catálogo</h3>
+            </div>
+
+            <section id="cards">
+                <div>
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/hortencias.webp" alt="Hortencias">
+                        <figcaption>
+                            Hortências
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/jasmins.webp" alt="Jasmin">
+                        <figcaption>
+                            Jasmins
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/rosa.webp" alt="Rosas">
+                        <figcaption>
+                            Rosas
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/girassol.webp" alt="Girassóis">
+                        <figcaption>
+                            Girassóis
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/amarilis.webp" alt="Amarilis">
+                        <figcaption>
+                            Amarilis
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/crisantemo.webp" alt="Crisantemo">
+                        <figcaption>
+                            Crisantemo
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/margarida.webp" alt="Margarida">
+                        <figcaption>
+                            Margarida
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card" tabindex="1">
+                        <img src="imagens/cinerarias.webp" alt="Cinenarias">
+                        <figcaption>
+                            Cinenarias
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <a href="compras.html" class="btn btnVerde">Ver mais</a>
+            </section>
+        </div>
+
+        <section id="sobre-nos">
+            <div>
+                <h3>Sobre nós</h3>
+                <p>A Floricultura da Flor, que carrega esse nome por causa de uma brincadeira, surgiu em 2005 como uma pequena vendinha na cidade de Alvinlândia. Com o tempo fomos expandindo nossas vendas e hoje somos uma das maiores floriculturas do Estado de São Paulo e também umas das poucas floriculturas que realizam vendas online.  
+                </p>
+            </div>
+            <img src="imagens/img_sobre_nos.jpg" alt="Imagem de uma Floricultura">
+        </section>
+
+        <section id="contato">
+            
+            <h3>Envie sua Mensagem para Nós</h3>
+            <img src="imagens/img_contato.webp" alt="Planta">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Ex: Maria Eduarda">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ex: lucas@gmail.com">
+                <label for="mensagem">Mensagem:</label>
+                <input type="text" id="mensagem" placeholder="Deixe aqui a sua mensagem para gente...">
+
+                <input type="submit" class="btnVerde" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div>
+            <img src="imagens/logo.webp" id="footer_logo" alt="Logo do site">
+            <h4>Flor</h4>
+        </div>
+
+        <div id="icons">
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.png" alt="Instagram logo"></a>
+
+            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook logo"></a>
+
+            <a href="jorge.html" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp logo" id="rs_zap"></a>
+
+            <a href="https://twitter.com" target="_blank"><img src="imagens/twitter.png" alt="Twitter logo"></a>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+<script src="script.js"></script>
+</body>
+</html>
