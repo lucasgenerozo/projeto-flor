@@ -1,4 +1,24 @@
-let fonte = 16
+const btnTamanho = document.getElementsByClassName("btnTamanho");
+let fonte = 16;
+
+for (el of btnTamanho) {
+    el.addEventListener('click', (e) => {
+        if(e.target.id == "aumenta") {
+            muda("+");
+        } else {
+            muda("-");
+        }
+    })
+    el.addEventListener('keydown', (e) => {
+        if (e.keycode == 13) {
+            if(e.target.id == "aumenta") {
+                muda("+");
+            } else {
+                muda("-");
+            }
+        }
+    })
+}
 
 function muda(tipo) {
 
