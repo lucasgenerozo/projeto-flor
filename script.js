@@ -29,3 +29,32 @@ function muda(tipo) {
     }
         document.body.style.fontSize = `${fonte}px`
 }
+
+const btnVerMais = document.getElementById("btnVerMais");
+const linhaSaibaMais = document.getElementsByClassName("verMais");
+let visible = false;
+
+//verifica o estado do elemento, e muda pro contrario
+//aplicando a todos elementos daclasse "verMais"
+function show() {
+    const txts = ["Ver mais", "Ver menos"]
+    let state;
+    
+    if (!visible) {
+        state = "normal";
+    } else {
+        state = "hide"
+    }
+
+    visible = !visible;
+    for (el of linhaSaibaMais) {
+        el.classList = `verMais ${state}`
+    }
+
+    //aqui eu to me aproveitando e muito do fato do js interpretar verdadeiro como 1 e falso como 0
+    btnVerMais.value = txts[Number(visible)];
+}
+
+btnVerMais.addEventListener('click', () => {
+    show();
+});

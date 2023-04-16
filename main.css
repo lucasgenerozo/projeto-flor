@@ -52,7 +52,7 @@ section#cards {
     flex-wrap: nowrap;
 }
 
-section#cards div {
+section#cards .normal {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -102,6 +102,10 @@ section#cards div {
     background-color: #9fa24e;
 }
 
+#btnVerMais {
+    height: 2em;
+}
+
 section#sobre-nos {
     display: flex;
     flex-direction: row;
@@ -141,4 +145,10 @@ section#sobre-nos img {
     width: 700px;
     border: 3px solid #A3A646;
     border-radius: 10px;
+}
+
+/* classes de aparencia para o js */
+
+.hide {
+    display: none;
 }
